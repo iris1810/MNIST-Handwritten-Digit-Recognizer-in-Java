@@ -2,9 +2,28 @@
 
 A **feed-forward neural network built from scratch in Java** to classify handwritten digits from the **MNIST dataset**. The model uses **backpropagation** and **stochastic gradient descent (SGD)** to learn digit patterns without relying on a machine-learning framework.
 
+<p align="center">
+  <a href="https://youtu.be/K9rsMnxV6FA">
+    <img src="https://img.youtube.com/vi/K9rsMnxV6FA/0.jpg" width="700" alt="MNIST Neural Network Demo">
+  </a>
+</p>
+
+<p align="center">
+  <strong><a href="https://youtu.be/K9rsMnxV6FA">▶ Watch the Project Demo on YouTube</a></strong>
+</p>
+
 ## Screenshots
 
+<!-- Add your screenshots below by replacing the placeholder paths. -->
 
+<p align="center">
+  <img src="path/to/your-first-screenshot.png" width="48%" alt="MNIST digit recognizer screenshot">
+  <img src="path/to/your-second-screenshot.png" width="48%" alt="MNIST digit prediction screenshot">
+</p>
+
+<p align="center">
+  <img src="path/to/your-third-screenshot.png" width="70%" alt="MNIST model evaluation screenshot">
+</p>
 
 ## Features
 
