@@ -1,82 +1,97 @@
-Neural Network Fundamentals
+# MNIST Handwritten Digit Recognizer in Java
 
-Author: KHAI TRAN NGUYEN
-Course: Artificial Intelligence (CSC 475)
-Assignment: Neural Network Fundamentals – Small Network + MNIST Digit Recognizer
+A **feed-forward neural network built from scratch in Java** to classify handwritten digits from the **MNIST dataset**. The model uses **backpropagation** and **stochastic gradient descent (SGD)** to learn digit patterns without relying on a machine-learning framework.
 
-I. Overview
+## Screenshots
 
-This program implements a feed-forward neural network for classifying handwritten digits (0–9) from the MNIST dataset.
-It uses stochastic gradient descent (SGD) and backpropagation to learn from training examples.
 
-The program provides a menu-driven interface that allows you to:
-    Train the network on MNIST data
-    Load and save trained network weights
-    Evaluate accuracy on training and testing sets
-    Display misclassified images
-    View predictions with ASCII image output
 
-II. Neural Network Architecture
+## Features
 
-Input layer: 784 neurons
-Hidden layer: 15 neurons
-Output layer: 10 neurons
-    (one per digit 0–9, using one-hot encoding)
+* Classifies handwritten digits **0–9** from MNIST images
+* Implements **forward propagation and backpropagation**
+* Trains using **mini-batch stochastic gradient descent**
+* Evaluates accuracy on both **training and testing datasets**
+* Saves and reloads learned **weights and biases**
+* Displays predictions using **ASCII-rendered digit images**
+* Shows **misclassified samples** for model error analysis
+* Reports per-digit and overall classification accuracy
 
-Activation: Sigmoid
+## Neural Network Architecture
 
-Training:
-    Mini-batches
-    Learning rate (η)
-    Random initial weight
+```text
+Input Layer      784 neurons (28 × 28 pixels)
+      ↓
+Hidden Layer      15 neurons
+      ↓
+Output Layer      10 neurons (digits 0–9)
+```
 
-III. Required Data
-- The program expects MNIST data in CSV format, training data and testing data
+* **Activation:** Sigmoid
+* **Output Representation:** One-hot encoding
+* **Optimization:** Mini-batch SGD
+* **Learning Algorithm:** Backpropagation
+* **Initialization:** Random weights and biases
 
-IV. Compile and Run
-- Compile: javac BigNetwork.java
-- Run:  java BigNetwork
+## How It Works
 
-V. Menu Option Descriptions
-1. Train the network
-    Reads the training data and performs SGD for multiple epochs
-    Prints accuracy for each digit and overall results
-    Continues until training is stopped or target accuracy is reached
+Each MNIST image is represented by **784 pixel values** and passed through the neural network.
 
-2. Load a pre-trained network
-    Loads weights/biases from a saved file
-    Allows testing without retraining
+During **forward propagation**, the network computes activations through the hidden and output layers.
 
-3. Display accuracy on training data
-    Runs the model on all training samples
-    Prints:
-        Correct counts for each digit
-        Overall accuracy
+During training, the predicted output is compared with the correct digit label. **Backpropagation** computes how each weight and bias contributed to the prediction error, and **SGD** updates those parameters over repeated mini-batches and epochs.
 
-4. Display accuracy on testing data
-    Runs the model on the testing set
-    Prints same statistics as training accuracy
+The output layer contains **10 neurons**, corresponding to digits `0–9`. The neuron with the highest activation becomes the predicted digit.
 
-5. Show images & predictions
-    Iterates through testing cases and prints:
-    ASCII representation of the handwritten digit
-    Correct label
-    Network output (predicted digit)
-    Whether correct or incorrect
+## Model Evaluation
 
-6. Display misclassified images
-    Shows only examples where the output was wrong
-    Helps diagnose the model’s weaknesses
+The application can evaluate the trained network on both training and testing data and report:
 
-7. Save network state   
-    Writes the weights and biases to file
-    Allows reloading later (Option 2)
+* Correct predictions for each digit
+* Overall classification accuracy
+* Predicted vs. actual labels
+* Misclassified samples for debugging and analysis
 
- 8. EXIT 
-    Exits the application safely
+## Interactive Menu
 
-VI. Menu Option Descriptions on Youtube 
+| Option | Action                               |
+| ------ | ------------------------------------ |
+| **1**  | Train the neural network             |
+| **2**  | Load a pre-trained network           |
+| **3**  | Evaluate accuracy on training data   |
+| **4**  | Evaluate accuracy on testing data    |
+| **5**  | Display digit images and predictions |
+| **6**  | Display misclassified images         |
+| **7**  | Save network weights and biases      |
+| **8**  | Exit                                 |
 
-https://youtu.be/K9rsMnxV6FA
-    
-    
+## Getting Started
+
+### Requirements
+
+* Java Development Kit (JDK)
+* MNIST training and testing datasets in CSV format
+
+### Compile
+
+```bash
+javac BigNetwork.java
+```
+
+### Run
+
+```bash
+java BigNetwork
+```
+
+## Tech Stack
+
+**Java • Neural Networks • Backpropagation • Stochastic Gradient Descent • MNIST**
+
+## Project Context
+
+Developed for **Artificial Intelligence (CSC 475)** as an implementation of neural-network fundamentals and handwritten-digit classification.
+
+## Author
+
+**Khai Tran Nguyen**
