@@ -2,28 +2,12 @@
 
 A **feed-forward neural network built from scratch in Java** to classify handwritten digits from the **MNIST dataset**. The model uses **backpropagation** and **stochastic gradient descent (SGD)** to learn digit patterns without relying on a machine-learning framework.
 
-<p align="center">
-  <a href="https://youtu.be/K9rsMnxV6FA">
-    <img src="https://img.youtube.com/vi/K9rsMnxV6FA/0.jpg" width="700" alt="MNIST Neural Network Demo">
-  </a>
-</p>
-
-<p align="center">
-  <strong><a href="https://youtu.be/K9rsMnxV6FA">▶ Watch the Project Demo on YouTube</a></strong>
-</p>
-
 ## Screenshots
 
-<!-- Add your screenshots below by replacing the placeholder paths. -->
-
-<p align="center">
-  <img src="path/to/your-first-screenshot.png" width="48%" alt="MNIST digit recognizer screenshot">
-  <img src="path/to/your-second-screenshot.png" width="48%" alt="MNIST digit prediction screenshot">
-</p>
-
-<p align="center">
-  <img src="path/to/your-third-screenshot.png" width="70%" alt="MNIST model evaluation screenshot">
-</p>
+<img width="1150" height="463" alt="Screenshot 2026-08-25 at 3 06 04 PM" src="https://github.com/user-attachments/assets/494ce253-dfe8-4720-b58c-ae21e569fdf7" />
+<img width="1155" height="471" alt="Screenshot 2026-08-25 at 3 06 30 PM" src="https://github.com/user-attachments/assets/57404d90-d35d-4cd2-84d8-9a01d1b7ac4a" />
+<img width="1333" height="872" alt="Screenshot 2026-08-25 at 3 06 54 PM" src="https://github.com/user-attachments/assets/0440e369-453c-48fa-af34-e746bfc740e5" />
+<img width="845" height="459" alt="Screenshot 2026-08-25 at 3 07 23 PM" src="https://github.com/user-attachments/assets/63b68f62-f611-42b7-bfcc-c54549ad5133" />
 
 ## Features
 
