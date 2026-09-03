@@ -4,7 +4,7 @@ A **feed-forward neural network built from scratch in Java** to classify handwri
 
 ## Demo
 
-**[Watch the Othello AI Demo on YouTube](https://www.youtube.com/watch?v=K9rsMnxV6FA&t=378s)**
+**[Watch the MNIST Handwritten Digit Recognizer Demo on YouTube](https://www.youtube.com/watch?v=K9rsMnxV6FA&t=378s)**
 
 ## Screenshots
 
