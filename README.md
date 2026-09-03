@@ -2,6 +2,10 @@
 
 A **feed-forward neural network built from scratch in Java** to classify handwritten digits from the **MNIST dataset**. The model uses **backpropagation** and **stochastic gradient descent (SGD)** to learn digit patterns without relying on a machine-learning framework.
 
+## Demo
+
+**[Watch the Othello AI Demo on YouTube](https://www.youtube.com/watch?v=K9rsMnxV6FA&t=378s)**
+
 ## Screenshots
 
 <img width="1150" height="463" alt="Screenshot 2026-08-25 at 3 06 04 PM" src="https://github.com/user-attachments/assets/494ce253-dfe8-4720-b58c-ae21e569fdf7" />
